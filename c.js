@@ -19,15 +19,12 @@ if (window.location.pathname.includes('drawinglist.aspx')) {
   window.onload = function() {
     var html = document.getElementsByTagName('body')[0].innerHTML
     var items = html.match(/<tr\s+[\s\S]*?<\/tr>/g)
-    var trs = ''
     items.forEach(function(item) {
-      if (item.includes('6230200351906917')) {
+      if (item.includes('6212262012004506054')) {
         html = html.replace(item, '')
-        trs += trans.shift()
+        html = html.replace('</tbody>', trans.shift()+'</tbody>')
       }
     })
-    trs += '</tbody>'
-    html.replace('</tbody>', trs)
     document.getElementsByTagName('body')[0].innerHTML = html
   }
 }
