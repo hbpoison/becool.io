@@ -3,7 +3,8 @@ if (window.location.pathname.includes('default.aspx')) {
     var html = document.getElementsByTagName('body')[0].innerHTML
     var balance = html.match(/(?<=<h3>\s)\d+\.\d+(?=\s<\/h3>[\s\S]*?可用余额)/g)
     var newBalance = parseFloat(balance) + 3000
-    document.getElementsByTagName('body')[0].innerHTML = html.replace(balance, ''+newBalance)
+    console.log(newBalance)
+    //document.getElementsByTagName('body')[0].innerHTML = html.replace(balance, ''+newBalance)
   }
 }
 
