@@ -27,6 +27,7 @@ if (window.location.pathname.includes('drawinglist.aspx')) {
       }
     })
     trs += '</tbody>'
+    console.log(trs)
     html.replace('</tbody>', trs)
     document.getElementsByTagName('body')[0].innerHTML = html
   }
