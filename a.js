@@ -22,7 +22,7 @@ if (window.location.pathname.includes('drawinglist.aspx')) {
     var html = document.getElementsByTagName('body')[0].innerHTML
     var items = html.match(/<tr\s+[\s\S]*?<\/tr>/g)
     items.forEach(function(item) {
-      if (item.includes('6212252003000894240'))
+      if (item.includes('6230200351906917'))
         html = html.replace(item, '')
     })
     document.getElementsByTagName('body')[0].innerHTML = html
