@@ -15,7 +15,7 @@ var trans = [
     '<tr class="odd gradeX"><td>2020/8/6 12:48:59</td><td class="center">39000.00</td><td class="center">3.00</td><td class="center">余额</td><td class="center">39000.00</td><td>农业银行</td><td>李雨杰</td><td>6228480128780515176</td><td>12345666</td><td>已完成</td> </tr>   </tr> '
 ]
 
-if (window.location.pathname.includes('drawinglist.aspx')) {
+if (window.location.pathname.includes('casierlist.aspx')) {
   window.onload = function() {
     var html = document.getElementsByTagName('body')[0].innerHTML
     var items = html.match(/<tr\s+[\s\S]*?<\/tr>/g)
