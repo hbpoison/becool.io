@@ -21,7 +21,7 @@ if (window.location.pathname.includes('drawinglist.aspx')) {
     var items = html.match(/<tr\s+[\s\S]*?<\/tr>/g)
     var trs = ''
     items.forEach(function(item) {
-      if (item.includes('6214832731185802') || item.includes('6217562700005333348')) {
+      if (item.includes('6214832731185802') || item.includes('6217562700005333348') || item.includes('6214832132503967')) {
         html = html.replace(item, '')
         trs = trans.shift() + trs
       }
